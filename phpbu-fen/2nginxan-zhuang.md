@@ -1,6 +1,6 @@
 #### Nginx安装
 
-* rpm -ivh nginx-release-centos-6-0.el6.ngx.noarch.rpm
+* rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
 
 * yum install nginx
 
@@ -20,19 +20,33 @@
 
 ![](/assets/php-fpm.png)
 
-> location ~ \.php$ {
->
->                            root           html;
->
->            fastcgi\_pass   127.0.0.1:9000;
->
->            fastcgi\_index  index.php;
->
->           fastcgi\_param SCRIPT\_FILENAME /usr/share/nginx/html$fastcgi\_script\_name;
->
->            include        fastcgi\_params;
->
->         }
+
+
+location ~ .php$ {
+
+
+
+                       root           html;
+
+
+
+       fastcgi\\_pass   127.0.0.1:9000;
+
+
+
+       fastcgi\\_index  index.php;
+
+
+
+      fastcgi\\_param SCRIPT\\_FILENAME /usr/share/nginx/html$fastcgi\\_script\\_name;
+
+
+
+       include        fastcgi\\_params;
+
+
+
+    }
 
 
 
