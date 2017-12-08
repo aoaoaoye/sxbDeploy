@@ -11,4 +11,6 @@
 * 项目部署
   * [1.java](1java.md)
   * [2.PHP](2php.md)
+* 补充说明
+  * [1.管理员账号userSig生成](1guan-li-yuan-zhang-hao-usersig-sheng-cheng.md)
 
