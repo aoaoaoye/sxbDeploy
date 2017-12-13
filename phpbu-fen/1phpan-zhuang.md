@@ -9,6 +9,12 @@
 > yum install  --enablerepo=remi --enablerepo=remi-php56 php-fpm
 > ```
 
+#### 修改php-fpm的用户和用户组
+
+> ```
+>
+> ```
+
 #### 启动php-fpm
 
 > ```
