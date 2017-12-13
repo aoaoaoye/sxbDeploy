@@ -1,12 +1,30 @@
 #### Nginx安装
 
-* rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+> ```bash
+> rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+> yum install nginx
+> ```
 
-* yum install nginx
+#### Nginx基本命令
 
-#### 启动Nginx
+* 启动
 
-* systemctl start nginx
+> ```
+> nginx
+> ```
+
+* 停止
+
+> ```
+> nginx -s stop
+> ```
+
+* Nginx配置修改后重启
+
+> ```
+> nginx -s reload
+> nginx -s reopen
+> ```
 
 #### Nginx配置
 
@@ -20,33 +38,31 @@
 
 ![](/assets/php-fpm.png)
 
-
-
 location ~ .php$ {
 
-
-
-                       root           html;
-
-
-
-       fastcgi\\_pass   127.0.0.1:9000;
+```
+                   root           html;
 
 
 
-       fastcgi\\_index  index.php;
+   fastcgi\\_pass   127.0.0.1:9000;
 
 
 
-      fastcgi\\_param SCRIPT\\_FILENAME /usr/share/nginx/html$fastcgi\\_script\\_name;
+   fastcgi\\_index  index.php;
 
 
 
-       include        fastcgi\\_params;
+  fastcgi\\_param SCRIPT\\_FILENAME /usr/share/nginx/html$fastcgi\\_script\\_name;
 
 
 
-    }
+   include        fastcgi\\_params;
+
+
+
+}
+```
 
 
 
