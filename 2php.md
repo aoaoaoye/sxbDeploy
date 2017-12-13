@@ -34,13 +34,12 @@
 
 浏览器访问这个项目的index.php会返回如下信息，说明运行成功了。
 
+> ```
 > {
->
 >     "errorCode": 10001,
->
 >     "errorInfo": "Invalid request."
->
 > }
+> ```
 
 
 
