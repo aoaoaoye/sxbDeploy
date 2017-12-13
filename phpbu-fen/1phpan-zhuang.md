@@ -15,7 +15,7 @@
 > vim /etc/php-fpm.d/www.conf
 > ```
 
-找到下面两行，用户和组都改成 nginx：
+找到下面两行，user 和 group 都改成 nginx，然后保存退出：![](/assets/php-fpm-www.png)
 
 #### 启动php-fpm
 
