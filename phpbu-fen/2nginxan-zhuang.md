@@ -80,23 +80,13 @@ Nginx的默认配置文件可以通过以下命令来查找：
 > }
 > ```
 
-vim /etc/nginx/conf.d/default.conf
+vim 保存并退出。
 
-修改index 添加 index.php支持php![](/assets/nginx.png)
+> ```
+> :wq
+> ```
 
-继续添加php-fpm配置
 
-![](/assets/php-fpm.png)
-
-```
-location ~ \.php$ {
-    root           html;
-    fastcgi_pass   127.0.0.1:9000;
-    fastcgi_index  index.php;
-    fastcgi_param  SCRIPT_FILENAME /usr/share/nginx/html$fastcgi_script_name;
-    include        fastcgi_params;
-}
-```
 
 #### Nginx基本命令
 
