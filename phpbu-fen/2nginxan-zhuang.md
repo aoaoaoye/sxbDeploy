@@ -70,13 +70,36 @@ Nginx的默认配置文件可以通过以下命令来查找：
 >     }
 >
 >     # 拦截地址转发到直播项目的tomcat（具体看项目需求）
->     location /zhibo/ {
->         proxy_pass http://127.0.0.1:8080/zhibo/;
+>     location /zhibo/wechatPayment/ {
+>         proxy_pass http://127.0.0.1:8080/zhibo/wechatPayment/;
 >         proxy_set_header Host $host;
 >         proxy_set_header X-Real-IP $remote_addr;
 >         proxy_set_header REMOTE-HOST $remote_addr;
 >         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 >     }
+>     
+>     location /zhibo/wechatPayment/ {
+>         proxy_pass http://127.0.0.1:8080/zhibo/wechatPayment/;
+>         proxy_set_header Host $host;
+>         proxy_set_header X-Real-IP $remote_addr;
+>         proxy_set_header REMOTE-HOST $remote_addr;
+>         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+>     }
+>     
+>     location /zhibo/wechatPayment/ {
+>         proxy_pass http://127.0.0.1:8080/zhibo/wechatPayment/;
+>         proxy_set_header Host $host;
+>         proxy_set_header X-Real-IP $remote_addr;
+>         proxy_set_header REMOTE-HOST $remote_addr;
+>         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+>     }
+>
+>     
+>     mobile.tuantuanliao.com/zhibo/wechatPayment/
+>
+> mobile.tuantuanliao.com/zhibo/pay/payPage
+>
+> mobile.tuantuanliao.com/zhibo/pay/info
 > }
 > ```
 
