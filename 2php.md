@@ -6,19 +6,13 @@
 > cd /usr/share/nginx/html
 > ```
 
-使用git clone 将项目clone到路径下：
+使用git clone 将项目clone到路径下，并指定项目名为zhibo，因为java代码那边调用的路径是zhibo。
 
 > ```
-> git clone https://git.coding.net/youchuanneikujun/zhibo-php.git
+> git clone https://git.coding.net/youchuanneikujun/zhibo-php.git zhibo
 > ```
 
 然后会要求你输入账号密码，这是coding上面的项目。输完会检出。
-
-把检出的php项目名字改成zhibo，因为java代码那边调用的路径是zhibo。
-
-> ```
-> mv zhibo-php zhibo
-> ```
 
 检出完成以后需要改一下这些文件的拥有者为nginx，不然Nginx没有权限访问。
 
