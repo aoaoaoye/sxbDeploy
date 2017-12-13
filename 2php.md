@@ -9,7 +9,7 @@
 使用git clone 将项目clone到路径下：
 
 > ```
->
+> git clone https://git.coding.net/youchuanneikujun/zhibo-php.git
 > ```
 
 
