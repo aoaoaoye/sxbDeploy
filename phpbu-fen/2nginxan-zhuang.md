@@ -47,13 +47,36 @@ Nginx的默认配置文件可以通过以下命令来查找：
 在打开的文件中加入以下配置内容：
 
 > ```
+> server {
+>     listen       80;
+>     server_name  localhost;
+>     location / {
+>         root   /usr/share/nginx/html;
+>         # 修改index 添加 index.php支持php
+>         index  index.php index.html index.htm;
+>     }
+>     error_page   500 502 503 504  /50x.html;
+>     location = /50x.html {
+>         root   /usr/share/nginx/html;
+>     }
 >
-> location ~ \.php$ {
->     root           html;
->     fastcgi_pass   127.0.0.1:9000;
->     fastcgi_index  index.php;
->     fastcgi_param  SCRIPT_FILENAME /usr/share/nginx/html$fastcgi_script_name;
->     include        fastcgi_params;
+>     # 添加php-fpm配置
+>     location ~ \.php$ {
+>         root html;
+>         fastcgi_pass 127.0.0.1:9000;
+>         fastcgi_index index.php;
+>         fastcgi_param SCRIPT_FILENAME /usr/share/nginx/html$fastcgi_script_name;
+>         include fastcgi_params;
+>     }
+>
+>     # 拦截地址转发到直播项目的tomcat（具体看项目需求）
+>     location /zhibo/ {
+>         proxy_pass http://127.0.0.1:8080/zhibo/;
+>         proxy_set_header Host $host;
+>         proxy_set_header X-Real-IP $remote_addr;
+>         proxy_set_header REMOTE-HOST $remote_addr;
+>         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+>     }
 > }
 > ```
 
