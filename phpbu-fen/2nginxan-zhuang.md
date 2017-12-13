@@ -86,6 +86,14 @@ vim 保存并退出。
 > :wq
 > ```
 
+
+
+进入nginx网站根路径一般为/usr/share/nginx/html修改目录权限
+
+> ```
+> chorm -R nginx ./
+> ```
+
 这样我需要的Nginx环境就配好了，接下来启动Nginx就好了。
 
 #### Nginx基本命令
