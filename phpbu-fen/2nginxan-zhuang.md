@@ -34,9 +34,15 @@ Nginx的默认配置文件可以通过以下命令来获取：
 > nginx -t
 > ```
 
-该命令会测试当前的配置文件，并输出配置文件目录。如下：
+该命令会测试当前的配置文件，并输出配置文件目录。如下图![](/assets/nginx-t.png)我返回的配置文件目录在：
 
+> /etc/nginx/nginx.conf
 
+备份一下这个配置文件：
+
+> ```
+> mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
+> ```
 
 vim /etc/nginx/conf.d/default.conf
 
