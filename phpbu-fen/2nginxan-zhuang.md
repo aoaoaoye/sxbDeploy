@@ -54,10 +54,10 @@ vim /etc/nginx/conf.d/default.conf
 ```
 location ~ .php$ {
     root             html;
-    fastcgi\\_pass   127.0.0.1:9000;
-    fastcgi\\_index  index.php;
-    fastcgi\\_param  SCRIPT\\_FILENAME /usr/share/nginx/html$fastcgi\\_script\\_name;
-    include          fastcgi\\_params;
+    fastcgi_pass   127.0.0.1:9000;
+    fastcgi_index  index.php;
+    fastcgi_param  SCRIPT_FILENAME /usr/share/nginx/html$fastcgi_script_name;
+    include        fastcgi_params;
 }
 ```
 
