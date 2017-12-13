@@ -12,3 +12,13 @@
 
 这里服务器IP改成你要上传的服务器IP，然后输入密码即可上传。
 
+上传成功以后启动tomcat，war包会自动打开。
+
+启动tomcat：
+
+> ```
+> sh /opt/tomcat7/bin/startup.sh
+> ```
+
+
+
