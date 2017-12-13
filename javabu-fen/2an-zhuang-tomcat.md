@@ -11,7 +11,7 @@
 > wget http://mirror.bit.edu.cn/apache/tomcat/tomcat-7/v7.0.82/bin/apache-tomcat-7.0.82.tar.gz
 > ```
 
-解压，重命名文件夹，这样好记一点
+解压，重命名文件夹，改成tomcat7，这样好记一点
 
 > ```
 > tar -zxvf apache-tomcat7.0.82.tar.gz
