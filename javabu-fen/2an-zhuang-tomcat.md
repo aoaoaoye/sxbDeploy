@@ -18,11 +18,11 @@
 > mv apache-tomcat-7.0.82 tomcat7
 > ```
 
-* tar xvf apache-tomcat7.0.82.tar.gz & cd apach-tomcat7.0.82
-
 根据项目创建图片服务器文件
 
-* mkdir -p zhiboImg
+> ```
+> mkdir -p zhiboImg
+> ```
 
 
 
