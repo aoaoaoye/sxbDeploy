@@ -12,5 +12,7 @@
 > git clone https://git.coding.net/youchuanneikujun/zhibo-php.git
 > ```
 
+然后会要求你输入账号密码，这是coding上面的项目。
+
 不需要额外操作，只要Nginx跑着就能用了，因为它不需要编译。
 
