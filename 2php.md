@@ -20,7 +20,23 @@
 > chown -R nginx ./
 > ```
 
-
-
 这样就好了，不需要额外操作，只要Nginx跑着就能用了，因为它不需要编译。
+
+
+
+#### 验证是否运行成功
+
+浏览器访问：
+
+> ```
+> http://youhost/zhibo-php/index.php
+> ```
+
+这里zhibo-php是上面php项目检出的时候，目录是zhibo-php。
+
+浏览器访问这个项目的index.php会返回如下信息，说明运行成功了。
+
+>
+
+
 
