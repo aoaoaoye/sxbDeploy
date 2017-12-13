@@ -52,7 +52,7 @@ vim /etc/nginx/conf.d/default.conf
 ![](/assets/php-fpm.png)
 
 ```
-location ~ .php$ {
+location ~ \.php$ {
     root             html;
     fastcgi_pass   127.0.0.1:9000;
     fastcgi_index  index.php;
