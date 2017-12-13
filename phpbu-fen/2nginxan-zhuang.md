@@ -28,7 +28,9 @@
 
 #### Nginx配置
 
-* 进入nginx配置文件
+Nginx的默认配置文件可以通过以下命令来获取：
+
+
 
 > vim /etc/nginx/conf.d/default.conf
 
