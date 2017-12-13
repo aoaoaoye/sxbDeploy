@@ -25,9 +25,9 @@ Nginx的默认配置文件可以通过以下命令来查找：
 
 ![](/assets/nginx-conf-view.png)
 
-所以我们只要在这个路径下写 .conf 文件就可以了：`/etc/nginx/conf.d/`
+所以我们只要在这个路径下写 .conf 结尾的文件就可以了：`/etc/nginx/conf.d/`
 
-查看一下这个文件
+查看一下这个文件夹，里面就一个default.conf 
 
 因为这个文件很多示例注释，影响阅读，所以我们建一个新的配置文件。
 
