@@ -90,7 +90,7 @@ vim 保存并退出。
 
 > ```
 > cd /usr/share/nginx/html
-> chorm -R nginx ./
+> chown -R nginx ./
 > ```
 
 这样我需要的Nginx环境就配好了，接下来启动Nginx就好了。
