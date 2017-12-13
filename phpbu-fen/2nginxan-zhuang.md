@@ -48,6 +48,13 @@ Nginx的默认配置文件可以通过以下命令来查找：
 
 > ```
 >
+> location ~ \.php$ {
+>     root           html;
+>     fastcgi_pass   127.0.0.1:9000;
+>     fastcgi_index  index.php;
+>     fastcgi_param  SCRIPT_FILENAME /usr/share/nginx/html$fastcgi_script_name;
+>     include        fastcgi_params;
+> }
 > ```
 
 vim /etc/nginx/conf.d/default.conf
