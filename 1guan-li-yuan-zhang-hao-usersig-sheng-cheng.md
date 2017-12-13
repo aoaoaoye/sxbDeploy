@@ -12,6 +12,10 @@
 
 然后会弹出一个vi界面可以输入内容，把下面内容贴上去（具体要看当前项目路径）
 
+以下每行代码由六部分组成，前五位控制时间频率，最后块是执行代码。
+
+前五位控制的时间最小也是一分钟一次。所以有些需要30秒一次，或者15秒一次的，就多写了几行，同是每分钟执行一次，通过不同的sleep时间，让几行代码在不同时间段苏醒，这样实现了每多少秒执行一次。
+
 > ```
 > * * * * * /usr/bin/php /usr/share/nginx/html/zhibo/cron/ClearInactiveLive.php
 > * * * * * sleep 30; /usr/bin/php /usr/share/nginx/html/zhibo/cron/ClearInactiveLive.php
