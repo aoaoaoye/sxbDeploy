@@ -12,7 +12,17 @@
 
 然后会弹出一个vi界面可以输入内容，把下面内容贴上去（具体要看当前项目路径）
 
-例子如下:
+> ```
+> * * * * * /usr/bin/php /usr/share/nginx/html/zhibo/cron/ClearInactiveLive.php
+> * * * * * sleep 30; /usr/bin/php /usr/share/nginx/html/zhibo/cron/ClearInactiveLive.php
+>
+> * * * * * /usr/bin/php /usr/share/nginx/html/zhibo/cron/ClearDeathRoomMember.php
+> * * * * * sleep 15; /usr/bin/php /usr/share/nginx/html/zhibo/cron/ClearDeathRoomMember.php
+> * * * * * sleep 30; /usr/bin/php /usr/share/nginx/html/zhibo/cron/ClearDeathRoomMember.php
+> * * * * * sleep 45; /usr/bin/php /usr/share/nginx/html/zhibo/cron/ClearDeathRoomMember.php
+>
+> * * 1 * * /usr/bin/php /usr/share/nginx/html/zhibo/cron/createSig.php
+> ```
 
 ![](/assets/cron.png)
 
