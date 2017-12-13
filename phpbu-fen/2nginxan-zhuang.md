@@ -79,7 +79,7 @@ Nginx的默认配置文件可以通过以下命令来查找：
 >     }
 >     
 >     location /zhibo/pay/payPage {
->         proxy_pass http://127.0.0.1:8080/zhibo/wechatPayment/;
+>         proxy_pass http://127.0.0.1:8080/zhibo/pay/payPage;
 >         proxy_set_header Host $host;
 >         proxy_set_header X-Real-IP $remote_addr;
 >         proxy_set_header REMOTE-HOST $remote_addr;
