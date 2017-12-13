@@ -27,20 +27,27 @@ Nginx的默认配置文件可以通过以下命令来查找：
 
 所以我们只要在这个路径下写 .conf 结尾的文件就可以了：`/etc/nginx/conf.d/`
 
-查看一下这个文件夹，里面就一个default.conf 
+查看一下这个文件夹，里面就一个default.conf
 
 因为这个文件很多示例注释，影响阅读，所以我们建一个新的配置文件。
 
 新建之前先备份一下这个配置文件：
 
 > ```
-> mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
+> mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.bak
 > ```
 
-新建一个配置文件代替原来的默认配置。
+新建一个配置文件代替原来的默认配置，并打开编辑。
 
 > ```
-> touch /etc/nginx/nginx.conf
+> touch /etc/nginx/conf.d/default.conf
+> vim /etc/nginx/conf.d/default.conf
+> ```
+
+在打开的文件中加入以下配置内容：
+
+> ```
+>
 > ```
 
 vim /etc/nginx/conf.d/default.conf
