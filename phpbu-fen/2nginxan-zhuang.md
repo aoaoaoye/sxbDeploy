@@ -86,11 +86,10 @@ vim 保存并退出。
 > :wq
 > ```
 
-
-
 进入nginx网站根路径一般为/usr/share/nginx/html修改目录权限
 
 > ```
+> cd /usr/share/nginx/html
 > chorm -R nginx ./
 > ```
 
