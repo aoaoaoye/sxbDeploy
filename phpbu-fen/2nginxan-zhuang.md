@@ -30,9 +30,15 @@
 
 Nginx的默认配置文件可以通过以下命令来获取：
 
+> ```
+> nginx -t
+> ```
+
+该命令会测试当前的配置文件，并输出配置文件目录。如下：
 
 
-> vim /etc/nginx/conf.d/default.conf
+
+vim /etc/nginx/conf.d/default.conf
 
 修改index 添加 index.php支持php![](/assets/nginx.png)
 
