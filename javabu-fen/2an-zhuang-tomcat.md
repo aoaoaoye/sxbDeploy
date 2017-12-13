@@ -21,7 +21,7 @@
 根据项目创建图片服务器文件
 
 > ```
-> mkdir -p zhiboImg
+> mkdir -p tomcat7/zhiboImg
 > ```
 
 
