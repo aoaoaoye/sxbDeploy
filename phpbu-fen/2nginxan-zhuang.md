@@ -34,9 +34,21 @@ Nginx的默认配置文件可以通过以下命令来查找：
 > nginx -t
 > ```
 
-该命令会测试当前的配置文件，并输出配置文件目录。如下图![](/assets/nginx-t.png)我返回的配置文件目录在：
+该命令会测试当前的配置文件，并输出配置文件目录。如下图![](/assets/nginx-t.png)我返回的配置文件目录在 : `/etc/nginx/nginx.conf`
 
-> /etc/nginx/nginx.conf
+查看一下这个文件：
+
+> ```
+> vim /etc/nginx/nginx.conf
+> ```
+
+发现文件末尾引入了其他配置文件，
+
+![](/assets/nginx-conf-view.png)
+
+所以我们只要在这个路径下写 .conf 文件就可以了：`/etc/nginx/conf.d/`
+
+查看一下这个文件
 
 因为这个文件很多示例注释，影响阅读，所以我们建一个新的配置文件。
 
@@ -51,8 +63,6 @@ Nginx的默认配置文件可以通过以下命令来查找：
 > ```
 > touch /etc/nginx/nginx.conf
 > ```
-
-
 
 vim /etc/nginx/conf.d/default.conf
 
