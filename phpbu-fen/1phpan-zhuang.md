@@ -12,7 +12,7 @@
 #### 修改php-fpm的用户和用户组
 
 > ```
-> vim 
+> vim /etc/php-fpm.d/www.conf
 > ```
 
 #### 启动php-fpm
