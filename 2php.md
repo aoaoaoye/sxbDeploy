@@ -36,9 +36,9 @@
 
 > {
 >
->   "errorCode": 10001,
+>     "errorCode": 10001,
 >
->   "errorInfo": "Invalid request."
+>     "errorInfo": "Invalid request."
 >
 > }
 
