@@ -1,5 +1,7 @@
 #### java项目
 
+注意：Java项目需要在PHP之前部署运行，因为里面有数据库建表的操作，需要Java项目去做。
+
 本地IDEA打包，点击Build-&gt;Build Artifacts![](/assets/build.png)
 
 在项目路径classes-&gt;artifacts下可以找到这个war包
