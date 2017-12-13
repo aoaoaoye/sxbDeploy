@@ -38,11 +38,17 @@ Nginx的默认配置文件可以通过以下命令来查找：
 
 > /etc/nginx/nginx.conf
 
-备份一下这个配置文件：
+因为这个文件很多示例注释，影响阅读，所以我们建一个新的配置文件。
+
+新建之前先备份一下这个配置文件：
 
 > ```
 > mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
 > ```
+
+
+
+
 
 vim /etc/nginx/conf.d/default.conf
 
