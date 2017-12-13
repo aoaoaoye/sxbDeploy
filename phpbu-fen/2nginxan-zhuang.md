@@ -46,7 +46,11 @@ Nginx的默认配置文件可以通过以下命令来查找：
 > mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
 > ```
 
+新建一个配置文件代替原来的默认配置。
 
+> ```
+> touch /etc/nginx/nginx.conf
+> ```
 
 
 
