@@ -12,7 +12,15 @@
 > git clone https://git.coding.net/youchuanneikujun/zhibo-php.git
 > ```
 
-然后会要求你输入账号密码，这是coding上面的项目。
+然后会要求你输入账号密码，这是coding上面的项目。输完会检出。
 
-不需要额外操作，只要Nginx跑着就能用了，因为它不需要编译。
+检出完成以后需要改一下这些文件的拥有者为nginx，不然Nginx没有权限访问。
+
+> ```
+> chown -R nginx ./
+> ```
+
+
+
+这样就好了，不需要额外操作，只要Nginx跑着就能用了，因为它不需要编译。
 
