@@ -51,8 +51,6 @@ vim /etc/nginx/conf.d/default.conf
 
 ![](/assets/php-fpm.png)
 
-
-
 ```
 location ~ .php$ {
     root             html;
