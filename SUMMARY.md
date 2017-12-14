@@ -11,6 +11,6 @@
 * [项目部署](xiang-mu-bu-shu.md)
   * [1.java](1java.md)
   * [2.PHP](2php.md)
-* 补充说明
+* [补充说明](bu-chong-shuo-ming.md)
   * [1.管理员账号userSig生成](1guan-li-yuan-zhang-hao-usersig-sheng-cheng.md)
 
