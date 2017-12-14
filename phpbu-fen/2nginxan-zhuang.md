@@ -109,7 +109,6 @@ Nginx的默认配置文件可以通过以下命令来查找：
 >         proxy_set_header REMOTE-HOST $remote_addr;
 >         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 >     }
->
 > }
 > ```
 
