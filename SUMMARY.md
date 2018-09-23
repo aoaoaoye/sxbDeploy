@@ -8,6 +8,7 @@
 * [JAVA部分](javabu-fen.md)
   * [1.安装jdk](javabu-fen/1an-zhuang-jdk.md)
   * [2.安装tomcat](javabu-fen/2an-zhuang-tomcat.md)
+  * [3.安装数据库](javabu-fen/3an-zhuang-shu-ju-ku.md)
 * [项目部署](xiang-mu-bu-shu.md)
   * [1.java](1java.md)
   * [2.PHP](2php.md)
